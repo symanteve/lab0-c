@@ -95,7 +95,10 @@ int q_size(queue_t *q)
 {
     /* You need to write the code for this function */
     /* Remember: It should operate in O(1) time */
-    return 0;
+    list_ele_t *newt;
+    newt = malloc(sizeof(list_ele_t));
+    q->tail = newt;
+    return true;
 }
 
 /*
