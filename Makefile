@@ -35,3 +35,5 @@ clean:
 	rm -rf *.dSYM
 	(cd traces; rm -f *~)
 
+cf:
+	clang-format -i queue.c
